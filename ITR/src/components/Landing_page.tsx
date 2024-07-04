@@ -88,63 +88,137 @@
 
 // export default Landing_page
 
-import { Button, Card, Col, Container, Row, Stack } from "react-bootstrap"
+import { Button, Card, Col, Container, Row, Stack } from "react-bootstrap";
 
-const Landing_page = () => {
-    return (
-        <Container className="mt-4 ">
-        <Row className="align-items-center justify-center">
-          <Col className=" text-center mb-4" >
-            <h2 style={{ fontSize: "2.5rem", fontWeight: "bold"}}>India's leading Tax e-filing website</h2>
-            <p className="text-center text-break ">
-              Filing the income tax return is so straightforward that users can easily fill and submit it on their own.
-            </p>
-          </Col>
-         
-        </Row>
+const LandingPage = () => {
+  return (
+    <Container className="mt-4">
+      <Row className="justify-content-center">
+        <Col className="text-center mb-4">
+          <h2 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+            India's leading Tax e-filing website
+          </h2>
+          <p className="text-center">
+            Filing the income tax return is so straightforward that users can
+            easily fill and submit it on their own.
+          </p>
+        </Col>
+      </Row>
+
   
-        <Row className="mt-4 ">
-          <Col lg={6} md={12} className="mb-4 " style={{width:"40%"}}>
-            <Card style={{ borderRadius: "10px", boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-              <Card.Img variant="top" style={{width:"20rem",paddingLeft:"6rem"}} src="https://myitronline.com/build/assets/itr-fling-BMOhTgUc.svg" />
-              <Card.Body>
-                <Card.Title as="h3">Start ITR Filing Yourself</Card.Title>
-                <Card.Text>
-                  We have changed the way people do tax filing in India. We
-                  don’t just get your tax return filed within minutes but get you maximum refunds
-                  in the shortest time.
-                </Card.Text>
-                <Button style={{border:"none", backgroundColor: "yellow", color: "black", borderRadius: "20px" }}>File ITR Now</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6} md={12} className="mb-4" style={{width:"40%"}}>
-            <Card style={{ borderRadius: "10px", boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-              <Card.Img variant="top" style={{width:"20rem",paddingLeft:"6rem"}} src="https://myitronline.com/build/assets/itr-fling-BMOhTgUc.svg" />
-              <Card.Body>
-                <Card.Title as="h3">Start ITR Filing Yourself</Card.Title>
-                <Card.Text>
-                  We have changed the way people do tax filing in India. We
-                  don’t just get your tax return filed within minutes but get you maximum refunds
-                  in the shortest time.
-                </Card.Text>
-                <Button style={{ border:"none",backgroundColor: "yellow", color: "black", borderRadius: "20px" }}>File ITR Now</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6} md={12} className="mb-4">
+      <Row className="mt-4">
+      
+        <Col lg={6} md={12} className="mb-4">
+          <Card
+            className="text-center"
+            style={{
+              borderRadius: "10px",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+            }}
+          >
+            <Card.Img
+              variant="top"
+              src="https://myitronline.com/build/assets/itr-fling-BMOhTgUc.svg"
+              className="card-img-sm"
+            />
+            <Card.Body>
+              <Card.Title as="h3">Start ITR Filing Yourself</Card.Title>
+              <Card.Text>
+                We have changed the way people do tax filing in India. We don’t
+                just get your tax return filed within minutes but get you
+                maximum refunds in the shortest time.
+              </Card.Text>
+              <Button
+                style={{
+                  border: "none",
+                  backgroundColor: "yellow",
+                  color: "black",
+                  borderRadius: "20px",
+                }}
+              >
+                File ITR Now
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
 
-          <Stack gap={3} direction="horizontal" style={{alignContent:"center"}}>
-            
-          <Button  style={{ backgroundColor: " #1a73e8", color: "black",border:"none", borderRadius: "20px" }}>File ITR Now</Button>
-          <Button style={{ backgroundColor: "yellow", color: "black",border:"none", borderRadius: "20px" }}>File ITR Now</Button>
-          <Button style={{ backgroundColor: "yellow", color: "black",border:"none", borderRadius: "20px" }}>File ITR Now</Button>
+        
+        <Col lg={6} md={12} className="mb-4">
+          <Card
+            className="text-center"
+            style={{
+              borderRadius: "10px",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+            }}
+          >
+            <Card.Img
+              variant="top"
+              src="https://myitronline.com/build/assets/itr-fling-BMOhTgUc.svg"
+              style={{width:"20rem"}}
+            />
+            <Card.Body>
+              <Card.Title as="h3" style={{}}>Start ITR Filing Yourself</Card.Title>
+              <Card.Text>
+                We have changed the way people do tax filing in India. We don’t
+                just get your tax return filed within minutes but get you
+                maximum refunds in the shortest time.
+              </Card.Text>
+              <Button
+                style={{
+                  border: "none",
+                  backgroundColor: "yellow",
+                  color: "black",
+                  borderRadius: "20px",
+                }}
+              >
+                File ITR Now
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+
+      <Row className="justify-content-center mt-4">
+        
+        <Col lg={12} className="text-center mb-3 d-lg-block d-md-none">
+          <Stack direction="horizontal" gap={3}>
+            <Button
+              style={{
+                backgroundColor: "#1a73e8",
+                color: "black",
+                border: "none",
+                borderRadius: "20px",
+              }}
+            >
+              Button 1
+            </Button>
+            <Button
+              style={{
+                backgroundColor: "yellow",
+                color: "black",
+                border: "none",
+                borderRadius: "20px",
+              }}
+            >
+              Button 2
+            </Button>
+            <Button
+              style={{
+                backgroundColor: "yellow",
+                color: "black",
+                border: "none",
+                borderRadius: "20px",
+              }}
+            >
+              Button 3
+            </Button>
           </Stack>
-          </Col>
-        </Row>
-      </Container>
+        </Col>
+       
+      </Row>
+    </Container>
+  );
+};
 
-    )
-}
+export default LandingPage;
 
-export default Landing_page
