@@ -1,4 +1,5 @@
 
+import Card from './components/Card'
 import './App.css'
 import Landing_page from './components/Landing_page'
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <Navbar/>
     <Landing_page/>
+    <Card/>
     </>
   )
 }

@@ -1,0 +1,14 @@
+.hover-effect:hover {
+    background-color:#007aff;
+    box-shadow: 0 4px 8px rgba(226, 221, 221, 0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    
+  }
+  
+
+  .hover-effect1:hover{
+
+    background-color: greenyellow;
+    box-shadow: 0 4px 8px rgba(226, 221, 221, 0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+  }

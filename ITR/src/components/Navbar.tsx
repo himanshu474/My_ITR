@@ -1,23 +1,24 @@
 import { Stack } from 'react-bootstrap';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 
-const CustomNavbar = () => {
+const CustomNavbar:React.FC = () => {
     return (
-        <Navbar bg="light" expand="md"   style={{ boxShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-            <Container className="d-flex justify-content-between " style={{marginBottom:"30px"}}>
+        <Navbar sticky="top" bg="light" expand="md"  style={{ boxShadow: '0 2px 4px rgba(0,0,0,0.3)'
+         }}>
+            <Container fluid className="d-flex items-center justify-content-evenly " >
                 <Navbar.Brand href="#home">
                     <img
                         src={"https://myitronline.com/build/assets/myitronline-logo-BscHGXkW.svg"}
                         className="align-start"
                         alt="Your Logo"
-                        width="100px"
+                        width="180px"
                 />
                 </Navbar.Brand>
                 <Stack gap={5} direction='horizontal'>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-0 ml-0">
+                        <Nav >
                             <NavDropdown title="E-filing Services" id="efiling-dropdown">
                                 <NavDropdown.Item href="#efiling1">Option 1</NavDropdown.Item>
                                 <NavDropdown.Item href="#efiling2">Option 2</NavDropdown.Item>
@@ -49,10 +50,10 @@ const CustomNavbar = () => {
                                 <NavDropdown.Item href="#Tools3">Option 3</NavDropdown.Item>
                             </NavDropdown>
 
-                        </Nav>
                         <Button style={{ backgroundColor: "green" , width: "9rem", height:"40px", marginLeft:"5rem"}}>
                             Login / Signup
                         </Button>
+                        </Nav>
                     </Navbar.Collapse>
         </Stack >
             </Container>
